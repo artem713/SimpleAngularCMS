@@ -1,0 +1,5 @@
+[
+  {"id": "view2", "title": "VIEW 2", "order": 1, "path": "tabs/view2.js"},
+  {"id": "view3", "title": "VIEW 3", "order": 2, "path": "tabs/view3.js"},
+  {"id": "view1", "title": "VIEW 1", "order": 0, "path": "tabs/view1.js"}
+]

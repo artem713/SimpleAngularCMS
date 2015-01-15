@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+	<meta charset="UTF-8">
+	<script src="scripts/angular/angular.js"></script>
+	<script src="scripts/angular/angular-loader.js"></script>
+	<script src="scripts/angular/angular-resource.min.js"></script>
+	<script src="scripts/angular/angular-route.min.js"></script>
+	<script src="scripts/jquery/jquery-1.11.2.min.js"></script>
+	<script src="scripts/app.js"></script>
+	<title>Simple Angular CMS</title>
+</head>
+<body ng-app="cms">
+	<nav>
+		<ul ng-controller="SimpleCMSController as cmsCtrl">
+			<li ng-repeat="tab in tabs"><a href ng-click="cmsCtrl.loadTab(tab)">{{tab.title}}</a></li>
+		</ul>
+	</nav>
+	<div ng-view=""></div>
+</body>
+</html>
